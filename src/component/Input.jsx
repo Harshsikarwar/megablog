@@ -12,7 +12,7 @@ export default function Input({
     label=""
 }){
     return(
-        <input label={label} placeholder={placeHolder} id={id} type={type} className={classname} style={`color:${textColor} background-color : ${bgColor} font-size : ${size} border-radius : ${round}`}>
+        <input label={label} placeholder={placeHolder} id={id} type={type} className={classname} style={{backgroundColor:bgColor, color:textColor, borderRadius:round, fontSize:size}}>
         </input>
     )
 }

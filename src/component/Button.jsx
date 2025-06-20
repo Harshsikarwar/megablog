@@ -10,7 +10,7 @@ export default function Button({
     classname=""
 }){
     return(
-        <button type={type} className={classname} style={`color : ${textColor} background-color : ${bgColor} font-size : ${size} border-radius : ${round}`}>
+        <button type={type} className={classname} style={{backgroundColor:bgColor, color:textColor, borderRadius:round, fontSize:size}}>
             {children}
         </button>
     )

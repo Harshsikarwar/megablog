@@ -7,10 +7,10 @@ export class Service{
     databases;
     buket;
     constructor(){
-        this.client(
-            this.setEndpoint(conf.appwriteUrl),
-            this.setProjectId(conf.appwriteProjectId)
-        )
+        this.client
+            .setEndpoint(conf.appwriteUrl)
+            .setProject(conf.appwriteProjectId);
+        
         this.databases = new Databases();
         this.buket = new Storage();
     };
